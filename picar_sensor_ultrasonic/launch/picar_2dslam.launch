@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- dynamic map generation -->
+  <include file="$(find picar_bringup)/launch/picar_2dslam.xml"/>
+</launch>

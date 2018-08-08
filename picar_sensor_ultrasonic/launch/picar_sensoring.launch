@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+
+<node pkg="tf" type="static_transform_publisher" name="sensor_ultrasonic_map2" args="0 0 0 0 0 0 odom base_link 100" />
+
+<node pkg="tf" type="static_transform_publisher" name="sensor_ultrasonic_map3" args="0 0 0 0 0 0 base_link sensor_ultrasonic 100" />
+
+<node pkg="picar_sensor_ultrasonic" type="picar_sensor_ultrasonic_node" name="picar_sensor_ultrasonic_node" output="screen"/>
+
+</launch>
